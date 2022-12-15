@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Programa que pede a temperatura em graus Fahrenheit, transforma e mostra a temperatura em graus Celsius. 
-
-# In[ ]:
-
-
+########## Programa que pede a temperatura em graus Fahrenheit, transforma e mostra a temperatura em graus Celsius.#########################
 fahrenheit = int(input('quantos Fahrenheit está fazendo ai?: '))
 
 fahrenheit -= 32
@@ -15,11 +11,7 @@ celsius = fahrenheit
 print('então está fazendo', celsius, 'por ai!')
 
 
-# Programa que pede a temperatura em graus Celsius, transforma e mostra a temperatura em graus Fahrenheit. 
-
-# In[34]:
-
-
+########## Programa que pede a temperatura em graus Celsius, transforma e mostra a temperatura em graus Fahrenheit.######################
 celsius = int(input('quantos celsius está fazendo ai?: '))
 
 celsius *= 1.8
@@ -29,11 +21,7 @@ fahrenheit = celsius
 print(f'então está fazendo {fahrenheit:.2f}, por ai!')
     
 
-
-# Programa que identifica se há vogal ou consoante 
-
-# In[69]:
-
+##########Programa que identifica se há vogal ou consoante ######################################################
 
 alfa = input("Informe uma letra ou consoante:")
 
@@ -55,10 +43,7 @@ else:
     print("Não é uma letra!")
 
 
-# Programa que lê três números e mostre o maior e menor deles. 
-
-# In[81]:
-
+########### Programa que lê três números e mostre o maior e menor deles.#################################################
 
 a = int(input('insira um número natural: '))
 b = int(input('insira um número natural: '))
@@ -71,11 +56,7 @@ valmini = min(a, b, c)
 print(f'o valor mínimo entre eles é {valmini}')
 
 
-# Programa que lê três números e mostre o maior e o menor deles. 
-
-# In[ ]:
-
-
+########## Programa que lê três números e mostre o maior e o menor deles.##########################################################
 a = int(input('insira um número natural: '))
 b = int(input('insira um número natural: '))
 c = int(input('insira um número natural: '))
@@ -100,10 +81,7 @@ if c < mini:
 print(f'esse é o menor número {mini}')
 
 
-# Programa que lê três números e mostra-os em ordem crescente decrescente. 
-
-# In[6]:
-
+######### Programa que lê três números e mostra-os em ordem crescente decrescente.#################################################
 
 lista = []
 for i in range(3):
@@ -126,10 +104,7 @@ print(lista)
 #     o salário antes do reajuste;  
 #     o percentual de aumento aplicado;  
 #     o valor do aumento;  
-#     o novo salário, após o aumento.   
-
-# In[ ]:
-
+#     o novo salário, após o aumento.   #####################################################################################
 
 salary = float(input('coloque seu salário: '))
     
@@ -162,10 +137,7 @@ if salary > 1500:
 
 
 # Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido. 
-# 
-
-# In[ ]:
-
+# ###########################################################################
 
 val = int(input('escreve um número ai, ninguém se importa Brasil perdeu a copa: '))
 
@@ -187,10 +159,7 @@ else:
 #     o salário antes do reajuste;  
 #     o percentual de aumento aplicado;  
 #     o valor do aumento;  
-#     o novo salário, após o aumento.   
-
-# In[ ]:
-
+#     o novo salário, após o aumento.   #############################################
 
 salary = input('coloque seu salário: ')
 
@@ -229,9 +198,6 @@ else:
 
 # Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações. 
 
-# In[93]:
-
-
 nome = input('digite um nome: ')
 senha = input('digite uma senha: ')
 
@@ -246,10 +212,7 @@ while senha == nome:
 #    2.Idade: entre 0 e 150;  
 #    3.Salário: maior que zero;  
 #    4.Sexo: 'f' ou 'm';  
-#    5.Estado Civil: 's', 'c', 'v', 'd'; 
-
-# In[15]:
-
+#    5.Estado Civil: 's', 'c', 'v', 'd'; ####################################################################################################3
 
 
 while True:
@@ -288,9 +251,6 @@ while True:
 #     "Mora perto da vítima?"  
 #     "Devia para a vítima?"  
 #     "Já trabalhou com a vítima?" O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente". 
-
-# In[30]:
-
 
 provas = 0
 positiva = 'sim'
@@ -349,11 +309,7 @@ if provas == 5:
     print('você é o assassino!')
 
 
-# Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto. 
-# 
-
-# In[92]:
-
+########## Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.#################
 
 year = input('insira um número correspondente a um ano: ')
 
@@ -361,6 +317,7 @@ year = input('insira um número correspondente a um ano: ')
 while year.isalpha():
     print('digite apenas números por favor!')
     year = input('insira um número correspondente a um ano: ')
+    
     
 #segunda validação aceita apena campo com 4 digitos
 if len(year) == 4:
@@ -384,10 +341,7 @@ else:
 #     Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;  
 #     Triângulo Equilátero: três lados iguais;  
 #     Triângulo Isósceles: quaisquer dois lados iguais;  
-#     Triângulo Escaleno: três lados diferentes;   
-
-# In[ ]:
-
+#     Triângulo Escaleno: três lados diferentes;   #######################################################################
 
 lado1 = input('digite um lados do triangulo')
 lado2 = input('digite outro dos lados do triangulo')
@@ -403,9 +357,6 @@ if
 
 
 # Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento. 
-
-# In[26]:
-
 
 A = 80000
 B = 200000
@@ -424,15 +375,7 @@ while B > A:
 print(f'foram necessários {anos} anos para as populações se igualarem')
 
 
-# In[ ]:
-
-
-
-
-
-# In[11]:
-
-
+############ In[ ]:faça um programa que gere números e os mostre lado a lado ##############################################
 a = []
 
 for i in range(1, 21):
@@ -440,8 +383,24 @@ for i in range(1, 21):
 print(a)
 
 
-# In[ ]:
+##########Faça um programa que receba dois números inteiros ímpares e gere os números inteiros que estão no intervalo compreendido por eles.##########
 
+a = input('digite um númeroo inteiro:')
+b = input('digite outro númeroo inteiro:')
 
+for i in range(int(a), int(b)):
+    e = i % 2
+    if e != 0:
+        c.append(i)
+        
+print(c)
 
+######## desenvolver uma tabuada #################################################
 
+a = int(input('digite um númeroo inteiro para saber sua tabuada:'))
+count = 0 
+
+while count <= 10:
+    r = a * count
+    print(f'{count} X {a} = {r}')
+    count += 1

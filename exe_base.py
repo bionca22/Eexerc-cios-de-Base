@@ -404,3 +404,65 @@ while count <= 10:
     r = a * count
     print(f'{count} X {a} = {r}')
     count += 1
+    
+ ####### Faça um Programa que peça a idade e a altura de 5 pessoas, armazene cada informação no seu respectivo vetor. Imprima a idade e a altura na ordem inversa a ordem lida.
+
+age = input('digite sua idade: ')
+height = input('digite sua altura: ')
+dic = {'idade':0, 'altura':0.0}
+
+if age.isalpha() or height.isalpha():
+    print('todos os campos devem ser preenchidos apenas com números')
+
+else:
+    if age != 0 and height != 0:    
+        dic['idade'] = age
+        dic['altura'] = height
+        print(dic)
+    
+    else:
+        print('valores devem ser maior que 0!')
+ 
+#######Faça um programa que leia um número indeterminado de valores, correspondentes a notas, encerrando a entrada de dados quando for informado um valor igual a -1 (que não deve ser armazenado). Após esta entrada de dados, faça: Mostre a quantidade de valores que foram lidos;
+#Exiba todos os valores na ordem em que foram informados, um ao lado do outro;
+#Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro;
+#Calcule e mostre a soma dos valores;
+#Calcule e mostre a média dos valores;
+#Calcule e mostre a quantidade de valores acima da média calculada;
+#Calcule e mostre a quantidade de valores abaixo de sete;
+#Encerre o programa com uma mensagem; 
+
+listavalor =[]
+listacimamedia = []
+listamenorqsete = []
+valor = input('insira um número: ')
+contador = 0
+
+while True:
+    try:
+        valor = float(input('insira mais um número: '))
+        if valor >= 0:
+            listavalor.append(valor)
+            contador += 1
+            
+        else:
+            print('números negativos param seu processo!, agora receba os resultados')
+            break
+            
+    except ValueError:
+        print('apenas números!')
+
+media = sum(listavalor)/contador 
+for num in listavalor:             
+    if num > media:
+        listacimamedia.append(num)
+    if num < 7:
+        listamenorqsete.append(num)
+        
+    
+print(f'---sua lista---\n {listavalor}')
+print(f'---sua lista reversa---\n {list(reversed(listavalor))}')
+print(f'---a soma de sua lista---\n {sum(listavalor)}')
+print(f'---a média de sua lista---\n {media}')
+print(f'---os números acima da média em sua lista---\n {listacimamedia}')
+print(f'---os números abaixo de sete em sua lista---\n {listamenorqsete}')

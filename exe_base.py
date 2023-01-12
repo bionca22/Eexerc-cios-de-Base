@@ -1,26 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-########## Programa que pede a temperatura em graus Fahrenheit, transforma e mostra a temperatura em graus Celsius.#########################
-fahrenheit = int(input('quantos Fahrenheit está fazendo ai?: '))
-
-fahrenheit -= 32
-fahrenheit /= 9
-fahrenheit *= 5
-celsius = fahrenheit
-print('então está fazendo', celsius, 'por ai!')
-
-
-########## Programa que pede a temperatura em graus Celsius, transforma e mostra a temperatura em graus Fahrenheit.######################
-celsius = int(input('quantos celsius está fazendo ai?: '))
-
-celsius *= 1.8
-celsius += 32
-fahrenheit = celsius
-
-print(f'então está fazendo {fahrenheit:.2f}, por ai!')
-    
-
 ##########Programa que identifica se há vogal ou consoante ######################################################
 
 alfa = input("Informe uma letra ou consoante:")
@@ -41,19 +21,6 @@ if alfa.isalpha():
         print("Consoante")
 else:
     print("Não é uma letra!")
-
-
-########### Programa que lê três números e mostre o maior e menor deles.#################################################
-
-a = int(input('insira um número natural: '))
-b = int(input('insira um número natural: '))
-c = int(input('insira um número natural: '))
-
-valmax = max(a, b, c)
-print(f'o valor maximo entre eles é {valmax}')
-
-valmini = min(a, b, c)
-print(f'o valor mínimo entre eles é {valmini}')
 
 
 ########## Programa que lê três números e mostre o maior e o menor deles.##########################################################
@@ -93,47 +60,6 @@ print(lista)
 
 lista.sort()
 print(lista)
-
-
-# As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o programa que calculará os reajustes.
-#     Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
-#     salários até R$ 280,00 (incluindo) : aumento de 20%  
-#     salários entre R$ 280,00 e R$ 700,00 : aumento de 15%  
-#     salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%  
-#     salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:  
-#     o salário antes do reajuste;  
-#     o percentual de aumento aplicado;  
-#     o valor do aumento;  
-#     o novo salário, após o aumento.   #####################################################################################
-
-salary = float(input('coloque seu salário: '))
-    
-if salary <= 280:
-    readjustment = salary * 0.2
-    salaryincreased = salary + readjustment
-    print('mensagem')
-    print(f'seu salário de {salary}, passa a ser agora de {salaryincreased}, parabéns!')
-    print(f'valor do aumento:{readjustment}, sob um persentual de 20%')
-
-
-if salary > 280 and salary <= 700:
-    readjustment = salary * 0.15
-    salaryincreased = salary + readjustment
-    print(f'seu salário de {salary}, passa a ser agora de {salaryincreased}, parabéns!')
-    print(f'valor do aumento:{readjustment}, sob um persentual de 15%')
-
-
-if salary > 700 and salary <= 1500:
-    readjustment = salary * 0.1
-    salaryincreased = salary + readjustment
-    print(f'seu salário de {salary}, passa a ser agora de {salaryincreased}, parabéns!')
-    print(f'valor do aumento:{readjustment}, sob um persentual de 10%')
-
-if salary > 1500:
-    readjustment = salary * 0.05
-    salaryincreased = salary + readjustment
-    print(f'seu salário de {salary}, passa a ser agora de {salaryincreased}, parabéns!')
-    print(f'valor do aumento:{readjustment}, sob um persentual de 5%')
 
 
 # Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido. 
@@ -333,27 +259,6 @@ if len(year) == 4:
         print('esse ano não será bissexto!')
 else:
     print('Desculpe, preciso que digite o ano com os 4 digitos')
-
-
-# Faça um Programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
-# 
-#    Dicas:
-#     Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;  
-#     Triângulo Equilátero: três lados iguais;  
-#     Triângulo Isósceles: quaisquer dois lados iguais;  
-#     Triângulo Escaleno: três lados diferentes;   #######################################################################
-
-lado1 = input('digite um lados do triangulo')
-lado2 = input('digite outro dos lados do triangulo')
-lado3 = input('digite outro dos lados do triangulo')
-
-if lado1 + lado2 < lado3:
-    print(1opa, isso não é um triangulo)
-    
-if lado1 == lado2 and lado2 == lado3:
-    print('esse é um triângulo Equilátero')
-    
-if 
 
 
 # Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento. 
